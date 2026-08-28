@@ -12,16 +12,15 @@ export default function About() {
         <div className="card about-text">
           <h3>Who I Am</h3>
           <p>
-            I'm a Software Engineer and Full-Stack Developer with experience
-            in building scalable, production-ready web applications from
-            frontend to backend. Alongside development, I've worked as a Tech
-            Lead, managing teams, defining system architecture, coordinating
-            with clients, and ensuring high code quality and timely delivery.
+            I'm a Full-Stack Developer specializing in building modern, 
+            scalable web applications. I have experience developing projects 
+            from frontend to backend, working with APIs, databases, authentication, 
+            and collaborative development using Git and GitHub.
           </p>
           <p>
-            I enjoy bridging business goals with technical solutions,
-            mentoring developers, and leading projects end-to-end while
-            continuously learning and adapting to modern technologies.
+            I enjoy turning ideas into practical digital solutions, 
+            solving real-world problems through technology, and continuously
+            improving my skills to build reliable and user-focused applications.
           </p>
         </div>
 
@@ -38,15 +37,15 @@ export default function About() {
           </div>
 
           <div className="edu-item">
-            <h4>Virtual University of Pakistan</h4>
+            <h4>The University of Agriculture Peshawar, Pakistan</h4>
             <p className="edu-detail">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
               </svg>
-              Bachelor of Science in Mathematics
+              Bachelor of Science in Computer Science
             </p>
-            <span className="edu-year">2022 - 2026</span>
+            <span className="edu-year">2023 - 2027</span>
           </div>
 
           <div className="edu-item">

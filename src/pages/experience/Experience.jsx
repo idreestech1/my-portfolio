@@ -3,21 +3,22 @@ import "./Experience.css";
 
 const experience = [
   {
-    period: "Jan 2026 - Present",
+    period: "July 2026 - Present",
     location: "Hybrid",
     type: "Full-time",
-    title: "Full Stack Developer - Fintech",
-    company: "Instapay",
+    title: "Full-Stack Developer — Bootcamp",
+    company: "Saylani Mass IT Training Center",
     description:
-      "Building scalable fintech solutions for secure payments and banking integrations. Working on systems supporting large user bases and high-volume transaction workflows. Integrating Plaid API with webhook-based real-time updates for seamless payment processing. Developing REST APIs with JWT authentication for secure financial transactions. Implementing payment gateway integrations and optimizing backend performance for mission-critical applications.",
+      "Building real-world web applications as part of an intensive full-stack development bootcamp. Working on end-to-end projects using modern web technologies, collaborating with team members through Git and GitHub, and applying industry-level development practices. Developing frontend and backend features, integrating APIs, managing databases, and improving applications through teamwork and continuous learning.",
     tags: [
-      "TypeScript",
-      "Next.js",
+      "MERN Stack",
       "React.js",
       "Node.js",
-      "MongoDB",
       "Express.js",
-      "Plaid API",
+      "MongoDB",
+      "JavaScript",
+      "Git",
+      "GitHub",
       "JWT",
       "REST API",
     ],

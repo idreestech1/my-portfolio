@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className="navbar">
       <nav className="nav-inner">
-        <span className="logo">{"< Ibrahim Khan />"}</span>
+        <span className="logo">{"<Idrees Ud Din />"}</span>
 
         <ul className="nav-links">
           {navLinks.map((link) => (

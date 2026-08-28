@@ -8,8 +8,8 @@ import "./Contact.css";
    Update the values below with your real details.
    ============================================ */
 const contactInfo = {
-  email: "ibrahimsheikh772@gmail.com",
-  phone: "+923431223329",
+  email: "engineeridrees8090@gmail.com",
+  phone: "+923156499631",
   location: "Pakistan",
 };
 
@@ -88,10 +88,10 @@ export default function Contact() {
 
           <div className="connect-title">Connect with me</div>
           <div className="connect-links">
-            <a href="#" aria-label="GitHub">
+            <a href="https://github.com/idreestech1" aria-label="GitHub">
               <GithubIcon />
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/public-profile/settings/?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B5N7Y0n6lSdKJGXgRAdPULw%3D%3D" aria-label="LinkedIn">
               <LinkedinIcon />
             </a>
           </div>
