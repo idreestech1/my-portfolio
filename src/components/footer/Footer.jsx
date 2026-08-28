@@ -16,11 +16,6 @@ const LinkedinIcon = () => (
     <circle cx="4" cy="4" r="2" />
   </svg>
 );
-const TwitterIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor">
-    <path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.6a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4a4.1 4.1 0 0 1-1.9.1 4.1 4.1 0 0 0 3.8 2.8A8.2 8.2 0 0 1 2 18.4a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1Z" />
-  </svg>
-);
 
 export default function Footer() {
   return (
@@ -28,7 +23,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-top">
           <div>
-            <div className="footer-brand-name">Ibrahim Khan</div>
+            <div className="footer-brand-name">Idrees Ud Din</div>
             <div className="footer-brand-tag">Full Stack Developer &amp; Tech Lead</div>
           </div>
 
@@ -41,14 +36,11 @@ export default function Footer() {
           </ul>
 
           <div className="footer-socials">
-            <a href="#" aria-label="GitHub">
+            <a href="https://github.com/idreestech1" aria-label="GitHub">
               <GithubIcon />
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/public-profile/settings/?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BhGWmjje1SBaw%2F9%2FmAwYYBQ%3D%3D" aria-label="LinkedIn">
               <LinkedinIcon />
-            </a>
-            <a href="#" aria-label="Twitter">
-              <TwitterIcon />
             </a>
           </div>
         </div>
@@ -56,7 +48,7 @@ export default function Footer() {
         <hr className="footer-divider" />
 
         <p className="footer-copy">
-          © {new Date().getFullYear()} Ibrahim Khan. All rights reserved.
+          © {new Date().getFullYear()} Idrees Ud Din. All rights reserved.
         </p>
       </div>
     </footer>
