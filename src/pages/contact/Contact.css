@@ -16,6 +16,12 @@
   max-width: 460px;
 }
 
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 24px;
+  }
+}
+
 .contact-card h3 {
   font-size: 18px;
   font-weight: 700;
@@ -60,6 +66,7 @@
   font-size: 14.5px;
   font-weight: 600;
   color: var(--text);
+  overflow-wrap: anywhere;
 }
 
 .contact-divider {

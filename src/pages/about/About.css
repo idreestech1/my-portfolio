@@ -8,6 +8,12 @@
   padding: 64px 24px;
 }
 
+@media (max-width: 767px) {
+  .section {
+    padding: 48px 16px;
+  }
+}
+
 .section-title {
   text-align: center;
   font-size: 32px;
@@ -41,6 +47,12 @@
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 32px;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 24px;
+  }
 }
 
 .card h3 {

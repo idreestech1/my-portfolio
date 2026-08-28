@@ -1,40 +1,48 @@
 import React from "react";
 import "./Skills.css";
+import {
+  Code2,
+  FileType2,
+  Atom,
+  Server,
+  Database,
+  Box,
+  Globe,
+  Layers,
+  FileCode,
+  Palette,
+  Wind,
+  Layout,
+  Flame,
+  GitBranch,
+  Terminal,
+  Network,
+  Cloud,
+  Container,
+  Table2,
+} from "lucide-react";
 
-/* ============================================
-   Skill list
-   Each skill uses a simple colored letter badge
-   as a placeholder icon so no icon library is
-   required. Swap `icon` for a real logo/icon
-   whenever you like — e.g. from react-icons:
-
-     import { FaReact } from "react-icons/fa";
-     ...
-     <FaReact />
-
-   just replace the <span className="skill-icon"> block.
-   ============================================ */
 const skills = [
-  { name: "JavaScript", icon: "JS", color: "#f0db4f", text: "#111" },
-  { name: "TypeScript", icon: "TS", color: "#3178c6" },
-  { name: "React", icon: "⚛", color: "#61dafb", text: "#111" },
-  { name: "Node.js", icon: "N", color: "#3c873a" },
-  { name: "MongoDB", icon: "M", color: "#47a248" },
-  { name: "Express.js", icon: "ex", color: "#333" },
-  { name: "Next.js", icon: "N", color: "#000" },
-  { name: "Redux", icon: "Rx", color: "#764abc" },
-  { name: "HTML5", icon: "5", color: "#e34f26" },
-  { name: "CSS3", icon: "3", color: "#2965f1" },
-  { name: "Tailwind CSS", icon: "~", color: "#06b6d4" },
-  { name: "Material UI", icon: "UI", color: "#0081cb" },
-  { name: "Firebase", icon: "Fb", color: "#ffca28", text: "#111" },
-  { name: "Git", icon: "Git", color: "#f05032" },
-  { name: "GitHub", icon: "Gh", color: "#181717" },
-  { name: "Python", icon: "Py", color: "#3776ab" },
-  { name: "REST API", icon: "API", color: "#e10098" },
-  { name: "AWS", icon: "AWS", color: "#ff9900", text: "#111" },
-  { name: "Docker", icon: "Do", color: "#2496ed" },
-  { name: "PostgreSQL", icon: "Pg", color: "#336791" },
+  { name: "JavaScript",  Icon: Code2,        color: "#f0db4f", text: "#111" },
+  { name: "TypeScript",  Icon: FileType2,    color: "#3178c6" },
+  { name: "React",       Icon: Atom,         color: "#61dafb", text: "#111" },
+  { name: "Node.js",     Icon: Server,       color: "#3c873a" },
+  { name: "MongoDB",     Icon: Database,     color: "#47a248" },
+  { name: "Express.js",  Icon: Box,          color: "#444" },
+  { name: "Next.js",     Icon: Globe,        color: "#000" },
+  { name: "Redux",       Icon: Layers,       color: "#764abc" },
+  { name: "HTML5",       Icon: FileCode,     color: "#e34f26" },
+  { name: "CSS3",        Icon: Palette,      color: "#2965f1" },
+  { name: "Tailwind CSS",Icon: Wind,         color: "#06b6d4", text: "#111" },
+  { name: "Material UI", Icon: Layout,       color: "#0081cb" },
+  { name: "Firebase",    Icon: Flame,        color: "#ffca28", text: "#111" },
+  { name: "Git",         Icon: GitBranch,    color: "#f05032" },
+  { name: "GitHub",      Icon: GitBranch,    color: "#181717" },
+  { name: "Python",      Icon: Terminal,     color: "#3776ab" },
+  { name: "REST API",    Icon: Network,      color: "#e10098" },
+  { name: "AWS",         Icon: Cloud,        color: "#ff9900", text: "#111" },
+  { name: "Docker",      Icon: Container,    color: "#2496ed" },
+  { name: "PostgreSQL",  Icon: Table2,       color: "#336791" },
 ];
 
 export default function Skills() {
@@ -53,7 +61,7 @@ export default function Skills() {
                 color: skill.text || "#fff",
               }}
             >
-              {skill.icon}
+              <skill.Icon size={22} strokeWidth={1.75} />
             </span>
             <span className="skill-name">{skill.name}</span>
           </div>

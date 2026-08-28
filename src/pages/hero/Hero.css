@@ -2,6 +2,17 @@
    Hero Section Styles
    ========================================= */
 
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero {
   max-width: 1152px;
   margin: 0 auto;
@@ -10,6 +21,11 @@
   grid-template-columns: 1fr;
   gap: 48px;
   align-items: center;
+  animation: hero-enter 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero.reveal-on-scroll {
+  transition-duration: 0.8s;
 }
 
 .eyebrow {
@@ -22,7 +38,7 @@
 }
 
 .hero h1 {
-  font-size: 56px;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.05;
@@ -104,11 +120,13 @@
 .hero-photo-wrap {
   display: flex;
   justify-content: center;
+  order: -1;
 }
 
 .hero-photo {
-  width: 300px;
-  height: 300px;
+  width: min(100%, 300px);
+  aspect-ratio: 1;
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
   background: var(--card-bg);
@@ -127,17 +145,22 @@
     grid-template-columns: 1fr 1fr;
     gap: 64px;
   }
+
+  .hero-photo-wrap {
+    order: 0;
+  }
+
   .hero-photo-wrap {
     justify-content: flex-end;
   }
   .hero-photo {
-    width: 380px;
-    height: 380px;
+    width: min(100%, 380px);
   }
 }
 
 @media (max-width: 767px) {
-  .hero h1 {
-    font-size: 40px;
+  .hero {
+    padding: 48px 16px 72px;
+    gap: 36px;
   }
 }

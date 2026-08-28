@@ -76,6 +76,9 @@
 }
 
 .project-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   font-size: 12px;
   font-weight: 600;
   color: var(--text);
@@ -83,4 +86,8 @@
   border: 1px solid var(--border);
   padding: 4px 10px;
   border-radius: 999px;
+}
+
+.project-tag svg {
+  flex-shrink: 0;
 }

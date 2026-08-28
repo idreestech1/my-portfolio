@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import { Tag } from "lucide-react";
 
 /* ============================================
    Project list
@@ -80,6 +81,7 @@ export default function Projects() {
               <div className="project-tags">
                 {project.tags.map((tag) => (
                   <span className="project-tag" key={tag}>
+                    <Tag size={13} aria-hidden="true" />
                     {tag}
                   </span>
                 ))}
