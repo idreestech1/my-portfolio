@@ -5,7 +5,7 @@ import { Calendar, MapPin, Briefcase, Tag } from "lucide-react";
 const experience = [
   {
     period: "July 2026 - Present",
-    location: "Hybrid",
+    location: "onsite",
     type: "Full-time",
     title: "Full-Stack Developer — Bootcamp",
     company: "Saylani Mass IT Training Center",
@@ -23,16 +23,6 @@ const experience = [
       "JWT",
       "REST API",
     ],
-  },
-  {
-    period: "Mar 2024 - Present",
-    location: "Onsite",
-    type: "Part-time",
-    title: "Lead Trainer – Software Engineering",
-    company: "Saylani Mass IT Training (SMIT)",
-    description:
-      "Leading a cohort of students through modern full-stack web development, from fundamentals to production-ready applications. Designing course material, reviewing projects, and mentoring students on best practices, debugging, and career readiness.",
-    tags: ["JavaScript", "React", "Node.js", "MongoDB", "Mentoring"],
   },
 ];
 
