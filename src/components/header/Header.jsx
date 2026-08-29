@@ -15,7 +15,46 @@ const navLinks = [
 export default function Header() {
   const [active, setActive] = useState("Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isClickScrolling = React.useRef(false);
 
+  // Scroll-spy: update active nav link based on which section is in view
+  useEffect(() => {
+    const sectionIds = navLinks.map(({ href }) => href.replace("#", ""));
+
+    if (!("IntersectionObserver" in window)) return undefined;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Skip if user clicked a nav link (let the click handler own state temporarily)
+        if (isClickScrolling.current) return;
+
+        // Find the entry closest to the top of the viewport
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (visible.length > 0) {
+          const id = visible[0].target.id;
+          const matched = navLinks.find(({ href }) => href === `#${id}`);
+          if (matched) setActive(matched.label);
+        }
+      },
+      {
+        // Trigger when the section top enters/leaves the upper 25% of the viewport
+        rootMargin: "-10% 0px -70% 0px",
+        threshold: 0,
+      }
+    );
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Mobile menu escape-key / body-scroll-lock
   useEffect(() => {
     if (!isMenuOpen) return undefined;
 
@@ -39,6 +78,12 @@ export default function Header() {
 
     const target = document.querySelector(href);
     if (!target) return;
+
+    // Pause scroll-spy while the smooth scroll animation runs (~800 ms)
+    isClickScrolling.current = true;
+    setTimeout(() => {
+      isClickScrolling.current = false;
+    }, 900);
 
     window.history.pushState({}, "", href);
     window.requestAnimationFrame(() => {
