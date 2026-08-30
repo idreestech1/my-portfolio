@@ -27,28 +27,6 @@ const projects = [
     image: "https://placehold.co/600x375?text=CapsPro",
     link: "", // Add your live link here when ready
   },
-  // Add links to other projects as needed
-  {
-    title: "Project Title 4",
-    description: "Short description of this project goes here.",
-    tags: ["React", "Node.js"],
-    image: "https://placehold.co/600x375?text=Project+4",
-    link: "",
-  },
-  {
-    title: "Project Title 5",
-    description: "Short description of this project goes here.",
-    tags: ["React", "Node.js"],
-    image: "https://placehold.co/600x375?text=Project+5",
-    link: "",
-  },
-  {
-    title: "Project Title 6",
-    description: "Short description of this project goes here.",
-    tags: ["React", "Node.js"],
-    image: "https://placehold.co/600x375?text=Project+6",
-    link: "",
-  },
 ];
 
 export default function Projects() {
