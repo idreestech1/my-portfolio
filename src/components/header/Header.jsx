@@ -146,7 +146,6 @@ export default function Header() {
         aria-hidden={!isMenuOpen}
       >
         <div className="mobile-menu-header">
-          <span>Navigation</span>
           <button
             className="menu-close"
             type="button"
