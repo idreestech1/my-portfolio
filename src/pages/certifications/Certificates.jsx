@@ -13,50 +13,22 @@ import {
 const certificates = [
   {
     icon: <Code2 size={20} />,
-    title: "Software Engineering",
-    issuer: "Coursera by IBM",
+    title: "Modern Web And Mobile Application Development",
+    issuer: "Saylani Mass IT Training Center",
     description:
-      "Completed a professional certification in Software Engineering by IBM, covering software development life cycle, version control, APIs,...",
-  },
-  {
-    icon: <BookOpen size={20} />,
-    title: "DSA Graduate",
-    issuer: "Coursera by Packt",
-    description:
-      "Completed a professional certification in Data Structures and Algorithms by Packt, covering fundamental and advanced topics in computer...",
-  },
-  {
-    icon: <ShieldCheck size={20} />,
-    title: "Intro to CyberSecurity",
-    issuer: "Cisco Networking",
-    description:
-      "Covered fundamental cybersecurity concepts, threats, and protection techniques.",
+      "Learned Modern Web and Mobile Application Development for innovative, scalable, and user-friendly digital solutions.",
   },
   {
     icon: <Code2 size={20} />,
     title: "Web Graphics and Mobile App Development",
-    issuer: "NAVTTC",
+    issuer: "Saylani Mass IT Training Center",
     description:
       "Learned UI/UX design principles and basics of mobile app development.",
   },
   {
-    icon: <Laptop size={20} />,
-    title: "Freelancing",
-    issuer: "DigiSkills",
-    description:
-      "Learned freelancing platforms, client dealing, and earning strategies.",
-  },
-  {
-    icon: <Globe size={20} />,
-    title: "WordPress",
-    issuer: "DigiSkills",
-    description:
-      "Gained expertise in website creation, customization, and management using WordPress.",
-  },
-  {
     icon: <Settings size={20} />,
     title: "English Language",
-    issuer: "DigiSkills",
+    issuer: "English Language center",
     description: "Improved professional English communication skills.",
   },
 ];
