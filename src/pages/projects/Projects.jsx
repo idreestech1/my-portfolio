@@ -12,12 +12,12 @@ const projects = [
     link: "https://polify-application-fullstack-n8a4.vercel.app/",
   },
   {
-    title: "Founder - Personal Smart AI",
+    title: "Legal Firm & Attorney Website",
     description:
-      "Build an intelligent content creation platform capable of generating high-quality articles, blogs, and AI-powered images using advanced...",
-    tags: ["JavaScript", "React", "Redux", "PostgreSQL", "Neon", "OpenAI"],
-    image: "https://placehold.co/600x375?text=Personal+AI",
-    link: "", // Add your live link here when ready
+      "Developed a responsive and professional website for a legal practice, featuring service showcases, attorney profiles, and a streamlined consultation booking system for clients.",
+    tags: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+    image: "./lawyer-main.png", // ✅ Correct public folder path (file is in public/)
+    link: "https://lawyerwebsite-mocha.vercel.app/", // Add your live link here when ready
   },
   {
     title: "CapsPro - E-commerce Platform",
